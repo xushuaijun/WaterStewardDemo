@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" >
+
+    <include
+        android:id="@+id/rl_select_pic_top"
+        layout="@layout/top_layout" />
+
+    <GridView
+        android:id="@+id/gv_select_pics"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rl_select_pic_top"
+        android:fadingEdge="none"
+        android:verticalSpacing="3dp"
+        android:fadingEdgeLength="0dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3" >
+    </GridView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#b0000000" >
+
+        <TextView android:id="@+id/tv_xiangce"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center_vertical"
+                  android:text="所有图片"
+                  android:layout_marginLeft="15dp"
+                  android:layout_centerVertical="true"
+                  android:textColor="@android:color/white"
+                  android:textSize="17sp"/>
+        <ImageView
+            android:id="@+id/iv_xiangce_icon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/icon2"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_xiangce"/>
+
+        <TextView android:id="@+id/tv_have_selected"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center_vertical"
+                  android:layout_alignParentRight="true"
+                  android:text="已选(0)张"
+                  android:layout_marginLeft="15dp"
+                  android:layout_centerVertical="true"
+                  android:textColor="@android:color/white"
+                  android:textSize="17sp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/NavPage">
+
+	<!--<TextView-->
+	<!--android:layout_width="fill_parent"-->
+	<!--android:layout_height="fill_parent"-->
+	<!--android:gravity="center"-->
+	<!--android:textColor="#ff000000"-->
+	<!--android:textSize="20dp"-->
+	<!--android:text="这个界面用于显示第三方app通过微信支付的结果"/>-->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+		<include
+			layout="@layout/title_bar"/>
+		<TextView
+			android:id="@+id/tv_buywater_status"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dp_10"
+			android:background="@android:color/white"
+			android:textColor="@color/color_ffff5722"
+			android:text="--"
+			android:textSize="@dimen/sp_18"
+			/>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dp_10"
+			android:layout_marginTop="10dp"
+			android:orientation="horizontal"
+			android:background="@android:color/white">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="订单编号："
+				android:textColor="@color/color_666666"
+				android:textSize="@dimen/sp_16"/>
+			<TextView
+				android:id="@+id/tv_buywater_orderNo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="--"
+				android:textColor="@color/color_666666"
+				android:textSize="@dimen/sp_16"/>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dp_10"
+			android:layout_marginTop="10dp"
+			android:orientation="vertical"
+			android:background="@android:color/white">
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/tv_buywater_name"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="哈哈"
+					android:textColor="@color/color_666666"
+					android:textSize="@dimen/sp_16"/>
+				<TextView
+					android:id="@+id/tv_buywater_time"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="--"
+					android:textColor="@color/color_666666"
+					android:textSize="@dimen/sp_16"
+					android:layout_alignParentRight="true"
+					android:layout_marginTop="@dimen/dp_5"/>
+			</RelativeLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="购买水量(m³)："
+					android:textColor="@color/color_666666"
+					android:textSize="@dimen/sp_16"
+					android:layout_marginTop="@dimen/dp_5"/>
+				<TextView
+					android:id="@+id/tv_buywater_totalwater"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="--"
+					android:textColor="@color/color_666666"
+					android:textSize="@dimen/sp_16"
+					android:layout_marginTop="@dimen/dp_5"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginTop="@dimen/dp_5">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="总金额(￥)："
+					android:textColor="@color/color_666666"
+					android:textSize="@dimen/sp_16"
+					android:layout_marginTop="@dimen/dp_5"/>
+				<TextView
+					android:id="@+id/tv_buywater_totalprice"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="--"
+					android:textColor="@color/color_ffff5722"
+					android:drawableRight="@mipmap/ico_money"
+					android:textSize="@dimen/sp_16"
+					android:layout_marginTop="@dimen/dp_5"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="定       额"
+					android:textColor="@color/color_666666"
+					android:textSize="16sp" />
+
+				<TextView
+					android:id="@+id/tv_buywater_basiclevel"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:text="--"
+					android:textColor="@color/color_666666"
+					android:textSize="16sp" />
+
+				<TextView
+					android:id="@+id/tv_buywater_basicunit"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="20dp"
+					android:text="--"
+					android:textColor="@color/color_ffff5722"
+					android:textSize="16sp" />
+
+				<TextView
+					android:id="@+id/tv_buywater_basicprice"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="20dp"
+					android:text="--"
+					android:drawableRight="@mipmap/ico_money"
+					android:textColor="@color/color_ffff5722"
+					android:textSize="16sp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="第一阶梯"
+					android:textColor="@color/color_666666"
+					android:textSize="16sp" />
+
+				<TextView
+					android:id="@+id/tv_buywater_firstlevel"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:text="--"
+					android:textColor="@color/color_666666"
+					android:textSize="16sp" />
+
+				<TextView
+					android:id="@+id/tv_buywater_firstunit"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="20dp"
+					android:text="--"
+					android:textColor="@color/color_ffff5722"
+					android:textSize="16sp" />
+
+				<TextView
+					android:id="@+id/tv_buywater_firstprice"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="20dp"
+					android:text="--"
+					android:drawableRight="@mipmap/ico_money"
+					android:textColor="@color/color_ffff5722"
+					android:textSize="16sp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="第二阶梯"
+					android:textColor="@color/color_666666"
+					android:textSize="16sp" />
+
+				<TextView
+					android:id="@+id/tv_buywater_secondlevel"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:text="--"
+					android:textColor="@color/color_666666"
+					android:textSize="16sp" />
+
+
+				<TextView
+					android:id="@+id/tv_buywater_secondunit"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="20dp"
+					android:text="--"
+					android:textColor="@color/color_ffff5722"
+					android:textSize="16sp" />
+
+				<TextView
+					android:id="@+id/tv_buywater_secondprice"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="20dp"
+					android:text="--"
+					android:drawableRight="@mipmap/ico_money"
+					android:textColor="@color/color_ffff5722"
+					android:textSize="16sp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="第三阶梯"
+					android:textColor="@color/color_666666"
+					android:textSize="16sp" />
+
+				<TextView
+					android:id="@+id/tv_buywater_thirdlevel"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:text="--"
+					android:textColor="@color/color_666666"
+					android:textSize="16sp" />
+
+				<TextView
+					android:id="@+id/tv_buywater_thirdunit"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="20dp"
+					android:text="--"
+					android:textColor="@color/color_ffff5722"
+					android:textSize="16sp" />
+
+				<TextView
+					android:id="@+id/tv_buywater_thirdprice"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="20dp"
+					android:text="--"
+					android:drawableRight="@mipmap/ico_money"
+					android:textColor="@color/color_ffff5722"
+					android:textSize="16sp" />
+			</LinearLayout>
+
+
+
+
+
+		</LinearLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			>
+			<TextView
+				android:id="@+id/btn_pay"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dp_10"
+				android:background="@drawable/bg_orange_order"
+				android:text="付款"
+				android:textColor="@color/color_ffff5722"
+				android:textSize="@dimen/sp_15"
+				android:paddingTop="@dimen/dp_8"
+				android:paddingBottom="@dimen/dp_8"
+				android:paddingRight="@dimen/sp_20"
+				android:paddingLeft="@dimen/sp_20"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="@dimen/dp_10"
+				android:visibility="gone"
+				/>
+			<TextView
+				android:id="@+id/btn_cancel"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dp_10"
+				android:background="@drawable/bg_white_order"
+				android:text="取消订单"
+				android:textColor="@color/color_666666"
+				android:textSize="@dimen/sp_15"
+				android:paddingTop="@dimen/dp_8"
+				android:paddingBottom="@dimen/dp_8"
+				android:paddingRight="@dimen/sp_20"
+				android:paddingLeft="@dimen/sp_20"
+				android:layout_marginRight="@dimen/dp_10"
+				android:layout_toLeftOf="@id/btn_pay"
+				android:visibility="gone"
+				/>
+			<TextView
+				android:id="@+id/btn_refund"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dp_10"
+				android:background="@drawable/bg_white_order"
+				android:text="退款"
+				android:textColor="@color/color_666666"
+				android:textSize="@dimen/sp_15"
+				android:paddingTop="@dimen/dp_8"
+				android:paddingBottom="@dimen/dp_8"
+				android:paddingRight="@dimen/sp_20"
+				android:paddingLeft="@dimen/sp_20"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="@dimen/dp_10"
+				android:visibility="gone"/>
+		</RelativeLayout>
+	</LinearLayout>
+	<include
+		layout="@layout/activity_loading"
+		android:visibility="gone"
+		/>
+
+
+
+</RelativeLayout>

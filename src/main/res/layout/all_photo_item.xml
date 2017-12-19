@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent" >
+
+    <ImageView
+        android:id="@+id/filephoto_imgview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/empty_bestie_big" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/filephoto_imgview"
+        android:gravity="left"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/filename_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文件名称"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/filecount_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="几张"
+            android:textColor="#8B7D7B"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tag_select"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/photowall_icon_album_selected" />
+
+</RelativeLayout>

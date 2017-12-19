@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <include
+        android:id="@+id/uwstitle"
+        layout="@layout/title_bar"
+        />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/prs_uws"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/uwstitle">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- 主题图片 -->
+            <com.xsyj.watersteward.customview.SlideShowView2
+                android:id="@+id/ssv_uws"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true" />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="@dimen/dp_10"
+               android:background="@android:color/white"
+               android:text="@string/usewaterstatistic_text"
+               android:textSize="@dimen/sp_15"
+               android:textColor="@color/color_666666"
+               />
+            <ImageView
+                android:id="@+id/img_uws_video"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ncp_banner1"
+                android:visibility="gone"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="@android:color/white"
+                android:padding="@dimen/dp_10">
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/title_bg"
+                        android:text="区域"
+                        android:gravity="center"
+                        android:textSize="@dimen/sp_16"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/rl_uws_areachoose"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        >
+                        <Spinner
+                            android:id="@+id/spn_uws_areachoose"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:minWidth="150dp"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            />
+                        <TextView
+                            android:id="@+id/tv_uws_areachoose"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:minWidth="150dp"
+                            android:text="全部"
+                            android:textSize="@dimen/sp_16"
+                            android:textColor="@color/color_666666"
+                            android:layout_centerVertical="true"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ico_sy_todown"
+                            android:paddingLeft="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/bg_color"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"/>
+                <TextView
+                    android:id="@+id/tv_uws_chooseTime"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="点击选择时间"
+                    android:textColor="@color/title_bg"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp_16"/>
+
+                <ImageView
+                    android:id="@+id/img_uws_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ico_btncx"
+                    android:layout_alignParentRight="true"
+                    />
+                
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:layout_marginTop="1dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_home_ywaterq"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_uws_allocationwater"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textColor="@color/color_333333"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="m³"
+                            android:textColor="@color/color_333333"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@mipmap/ico_sy_ys"
+                        android:drawablePadding="@dimen/dp_4"
+                        android:text="分配水量"
+                        android:textColor="@color/bottom_font"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/bg_color" />
+
+                <LinearLayout
+                    android:id="@+id/ll_home_ywaterr"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_uws_totalwater"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textColor="@color/color_333333"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="m³"
+                            android:textColor="@color/color_333333"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@mipmap/ico_sy_ys"
+                        android:drawablePadding="@dimen/dp_4"
+                        android:text="用水总量"
+                        android:textColor="@color/bottom_font"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/bg_color" />
+
+                <LinearLayout
+                    android:id="@+id/ll_home_swaterq"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_uws_surpasswater"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textColor="@color/color_333333"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="m³"
+                            android:textColor="@color/color_333333"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_uws_surpasswaterView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="超采水量"
+                        android:drawableLeft="@mipmap/ico_sy_ys"
+                        android:drawablePadding="@dimen/dp_4"
+                        android:textColor="@color/bottom_font"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bar_uws_chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@android:color/white"
+                android:layout_marginTop="1dp"
+                android:padding="@dimen/dp_10"
+                />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                >
+                <!--com.xsyj.watersteward.customview.LJ-->
+                <com.xsyj.watersteward.customview.ListViewForScrollView
+                    android:id="@+id/lj_uws"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/bg_color"
+                    android:dividerHeight="@dimen/dp_10"
+                    android:scrollbars="none"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:listSelector="@android:color/transparent"
+                    />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+    <include
+        layout="@layout/activity_loading"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

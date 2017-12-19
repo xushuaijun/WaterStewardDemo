@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/NavPage">
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+			<include
+				layout="@layout/title_bar"/>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="@dimen/dp_10"
+				android:layout_margin="10dp"
+				android:orientation="vertical"
+				android:background="@android:color/white"
+				>
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal">
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="用水量(m³)："
+							android:textColor="@color/color_666666"
+							android:textSize="@dimen/sp_16"
+							/>
+						<TextView
+							android:id="@+id/tv_usewaterdetail_usewater"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="--"
+							android:textColor="@color/color_666666"
+							android:drawableRight="@mipmap/ico_sy_ys"
+							android:textSize="@dimen/sp_16"/>
+						</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:orientation="horizontal">
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="卡剩余金额："
+							android:textColor="@color/color_666666"
+							android:textSize="@dimen/sp_16"
+							android:layout_marginTop="@dimen/dp_5"/>
+						<TextView
+							android:id="@+id/tv_usewaterdetail_je"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="--"
+							android:textColor="@color/color_ffff5722"
+							android:textSize="@dimen/sp_16"
+							android:drawableRight="@mipmap/ico_sy_je"
+							android:layout_marginTop="@dimen/dp_5"/>
+					</LinearLayout>
+
+				</RelativeLayout>
+
+				<LinearLayout
+					android:id="@+id/ll_orderdetail_card"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginTop="@dimen/dp_10">
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="机井编号："
+						android:textColor="@color/color_666666"
+						android:textSize="@dimen/sp_16"
+						/>
+					<TextView
+						android:id="@+id/tv_usewaterdetail_stcd"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="--"
+						android:textColor="@color/color_666666"
+						android:textSize="@dimen/sp_16"
+						/>
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/ll_orderdetail_name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginTop="@dimen/dp_10">
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="机井名称："
+						android:textColor="@color/color_666666"
+						android:textSize="@dimen/sp_16"
+						/>
+					<TextView
+						android:id="@+id/tv_usewaterdetail_name"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="--"
+						android:textColor="@color/color_666666"
+						android:textSize="@dimen/sp_16"
+						/>
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:visibility="gone">
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="卡        号："
+						android:textColor="@color/color_666666"
+						android:textSize="@dimen/sp_16"
+						android:layout_marginTop="@dimen/dp_5"/>
+					<TextView
+						android:id="@+id/tv_usewaterdetail_userCard"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="--"
+						android:textColor="@color/color_666666"
+						android:textSize="@dimen/sp_16"
+						android:layout_marginTop="@dimen/dp_5"/>
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginTop="@dimen/dp_10"
+					>
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="开泵时间："
+						android:textColor="@color/color_666666"
+						android:textSize="@dimen/sp_16"
+						/>
+					<TextView
+						android:id="@+id/tv_usewaterdetail_beginTime"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="--"
+						android:textColor="@color/color_666666"
+						android:textSize="@dimen/sp_16"
+						/>
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:orientation="horizontal"
+					>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="关泵时间:"
+						android:textColor="@color/color_666666"
+						android:textSize="16sp" />
+
+					<TextView
+						android:id="@+id/tv_usewaterdetail_endTime"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"
+						android:text="--"
+						android:textColor="@color/color_666666"
+						android:textSize="16sp" />
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dp_10"
+					android:orientation="horizontal"
+					android:visibility="gone">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/dp_5"
+						android:text="机井名称："
+						android:textColor="@color/color_666666"
+						android:textSize="@dimen/sp_16" />
+
+					<TextView
+						android:id="@+id/tv_usewaterdetail_wname"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/dp_5"
+						android:text="--"
+						android:textColor="@color/color_666666"
+						android:textSize="@dimen/sp_16" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginTop="@dimen/dp_5"
+					android:visibility="gone">
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="开泵剩余水量(m³):"
+							android:textColor="@color/color_666666"
+							android:textSize="16sp" />
+
+						<TextView
+							android:id="@+id/tv_usewaterdetail_openRemain"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="10dp"
+							android:text="--"
+							android:textColor="@color/color_666666"
+							android:textSize="16sp" />
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:orientation="horizontal"
+					android:visibility="gone">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="停泵剩余水量(m³):"
+						android:textColor="@color/color_666666"
+						android:textSize="16sp" />
+
+					<TextView
+						android:id="@+id/tv_usewaterdetail_stopRemain"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"
+						android:text="--"
+						android:textColor="@color/color_666666"
+						android:textSize="16sp" />
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:orientation="horizontal"
+					android:visibility="gone">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="开泵剩余电量："
+						android:textColor="@color/color_666666"
+						android:textSize="16sp" />
+
+					<TextView
+						android:id="@+id/tv_usewaterdetail_openElectricity"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"
+						android:text="--"
+						android:textColor="@color/color_666666"
+						android:textSize="16sp" />
+
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:orientation="horizontal"
+					android:visibility="gone">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="停泵剩余电量："
+						android:textColor="@color/color_666666"
+						android:textSize="16sp" />
+
+					<TextView
+						android:id="@+id/tv_usewaterdetail_stopElectricity"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"
+						android:text="--"
+						android:textColor="@color/color_666666"
+						android:textSize="16sp" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:orientation="horizontal"
+					>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="用  电  量："
+						android:textColor="@color/color_666666"
+						android:textSize="16sp" />
+
+					<TextView
+						android:id="@+id/tv_usewaterdetail_useElectricity"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"
+						android:text="--"
+						android:textColor="@color/color_666666"
+						android:textSize="16sp" />
+
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:orientation="horizontal"
+					>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="灌溉时长："
+						android:textColor="@color/color_666666"
+						android:textSize="16sp" />
+
+					<TextView
+						android:id="@+id/tv_usewaterdetail_runtime"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"
+						android:text="--"
+						android:textColor="@color/color_666666"
+						android:textSize="16sp" />
+
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="卡剩余水量："
+						android:textColor="@color/color_666666"
+						android:textSize="16sp" />
+
+					<TextView
+						android:id="@+id/tv_usewaterdetail_spWater"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"
+						android:text="--"
+						android:textColor="@color/color_666666"
+						android:textSize="16sp" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:orientation="horizontal"
+					android:visibility="gone">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="机井状态："
+						android:textColor="@color/color_666666"
+						android:textSize="16sp" />
+
+					<TextView
+						android:id="@+id/tv_usewaterdetail_zt"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"
+						android:text="--"
+						android:textColor="@color/color_54BFFC"
+						android:textSize="16sp" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+
+   <include
+	   layout="@layout/activity_loading"
+	   android:visibility="gone"/>
+
+
+
+</RelativeLayout>

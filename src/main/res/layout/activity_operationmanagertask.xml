@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context="com.xsyj.watersteward.activity.home.WaterRecordActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/title_bar"
+            />
+        <TextView
+            android:id="@+id/tv_operationmanatask_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:textColor="@color/title_bg"
+            android:textSize="@dimen/sp_16"
+            android:text="点击选择条件"
+            android:gravity="center"
+            android:background="@android:color/white"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_10"
+            >
+            <com.xsyj.watersteward.customview.LJListView
+                android:id="@+id/lj_opermanatask"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+
+
+    <include
+        layout="@layout/activity_loading"
+        android:visibility="gone"/>
+
+
+
+
+</RelativeLayout>

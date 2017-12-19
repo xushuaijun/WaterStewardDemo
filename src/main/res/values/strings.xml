@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">水管家</string>
+    <string name="warm_prompt">因移动信号不稳定等原因，个别月展示的0用水量或无用水量，
+                               可能与您实际用水情况不一致，针对此问题我们公司将尽快安排调整处理，请见谅。</string>
+    <string name="repair_text">详细描述故障情况，有助于工作人员提前了解详情哦！</string>
+    <string name="waterbalance_text">如因未及时购水导致停水，请点击</string>
+    <string name="consult_text">请输入10-200字符咨询内容，也可以点击上面快速输入咨询内容咨询常见问题</string>
+    <string name="ques_text1">1.如何正常使用“水管家”服务？</string>
+    <string name="ques_text2">2.如何获取客户编号？</string>
+    <string name="ques_text3">3.如何获取用水查询密码？</string>
+    <string name="ques_text4">4.遇到问题如何与我们联系？</string>
+    <string name="aboutus_text">\t\t\"水管家\"是北京新水源景科技股份有限公司为社会公众提供的更为方便快捷的
+                                掌上互动水力服务应用软件，具备在线支付购水、用水查询等服务功能，为广大客户提供
+                                随时随地的贴心水力服务。</string>
+    <string name="expereng_text">想成为水力行业的体验专家吗？快来加入“用水”体验师，用的不爽大声说，我的产品我做主</string>
+    <string name="bindun_text">我们将通过您注册的手机号在“水管家”所有用户编号中自动检测与您手机号匹配的用户编号，
+                               若检测存在，您可以快速绑定。</string>
+    <string name="bindman_text">1.客户编号为7-10位数字，点击此处查看获取客户编号的方法。\n2.若您不知道查询密码，
+                                点击此处查看获取查询密码的详细方法，或者直接重置查询密码。\n3.用水服务范围内的客户\n4.如果提示客户编号已被绑定，请拨打热线咨询。</string>
+
+    <string name="wl_detail1">\t\t虽然地球71%%表面覆盖的是水，但是其实淡水资源只占了地球总水量的2%%左右，而可被人类利用的淡水总量只占地球上总水量的十万分之三。
+        由此可见，地球上可被利用的水并没有人类想象的那么多，如果让它们继续遭到人类的摧残，早晚有一天，它会消失。保护水源人人有责任和义务。</string>
+    <string name="wl_detail2">\t\t水权交易必在实行，由于我国一直实行“福利水”制度，水没有被当作一种经济商品对待，所以，在水资源的配置上，
+        市场机制通常被管制方法所替代，当前应当转变观念，认识到水资源的自然属性和商品属性，遵循自然规律和价值规律，确实把水作为一种商品，合理应用市场机制配置水资源，减少资源浪费。</string>
+    <string name="opqudetail1">1、点击“服务”->“我要咨询”咨询想要了解的内容；</string>
+    <string name="opqudetail2">2、点击“服务”->“意见反馈”反馈遇到的问题；</string>
+    <string name="opqudetail3">3、点击“服务”->“客户服务”欢迎致电。</string>
+    <string name="infornotice_text">\t\t您的水还有1m³，请您及时购水，以免停水为您带来不便。</string>
+
+    <string name="operationmanagertask">\t\t本人已检查维修处，现已确实恢复原正常使用状态，维修人员完成维修，验收合格。</string>
+
+    <string name="usewaterstatistic_text">\t\t房山区位于北京市西南部，全区面积2019K㎡。房山区现有灌溉面积38.25万亩，耕地有效灌溉面积28.63万亩，园林草地有效灌溉面积9.62万亩。
+                                          主要作物种植类型有：大田、设施、果树、林地等。现有灌溉机井3862眼，均已配套机电设备。高效灌溉面积21.93万亩。</string>
+    <!-- xlistview  start -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <string name="ym_detail1">\t\t向用户朋友们介绍一种赖氨酸含量较高并且高产的糯玉米品种。</string>
+
+    <!--工具类下载 -->
+    <string name="update_app_model_error">下载失败(点击浏览器下载)</string>
+    <string name="update_app_model_prepare">准备下载</string>
+    <string name="update_app_model_progress">正在下载 %1$d%2$s</string>
+    <string name="update_app_model_success">下载成功(点击安装)</string>
+
+    <!-- Page of activity_add_debug_msg -->
+    <string name="debug_title">添加调试单</string>
+    <string name="debug_pump_name">机井名称：</string>
+    <string name="debug_pump_num">机井编号：</string>
+    <string name="debug_time">调试时间：</string>
+    <string name="debug_add_files">添加附件</string>
+    <string name="debug_submit">提交</string>
+    <string name="debug_pump">水泵基本情况</string>
+    <string name="well_sbxh">水泵型号：</string>
+    <string name="well_sbgl">功率：</string>
+    <string name="well_sbms">水泵埋深：</string>
+    <string name="well_cskj"> 水管口径：</string>
+    <string name="znhjlsbjbqk">智能化计量设备基本情况</string>
+    <string name="well_kzsbxh">控制设备型号：</string>
+    <string name="well_kzsbbh">控制设备编号：</string>
+    <string name="well_jlsblx">计量设备类型：</string>
+    <string name="well_jlsbbh">计量设备编号：</string>
+    <string name="well_jlsbkj">计量设备口径：</string>
+    <string name="well_gprsnum">GPRS手机卡卡号：</string>
+    <string name="setuptype">安装方式：</string>
+    <string name="setupdata">安装日期：</string>
+    <string name="well_kzdy">空载电压：</string>
+    <string name="well_fzdy">负载电压：</string>
+    <string name="well_yxdl">运行电流：</string>
+    <string name="well_dxgwxhzl">电信公网信号质量：</string>
+    <string name="znhjlsbxnqk">智能化计量设备性能情况</string>
+    <string name="well_sklc">刷卡流程：</string>
+    <string name="well_xsxx">显示信息：</string>
+    <string name="well_jljd">计量精度：</string>
+    <string name="well_sjbs">数据报送：</string>
+    <string name="well_sbqt">水泵启停：</string>
+    <string name="well_djbh">电机保护：</string>
+    <string name="xchjqk">现场环境情况</string>
+    <string name="well_tspeople">调   试   人：</string>
+    <string name="well_jspeople">经   手   人：</string>
+    <string name="item_debug_time">调试时间:</string>
+    <string name="debug_pump_info">机井基本情况</string>
+
+</resources>

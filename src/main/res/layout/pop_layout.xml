@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_pop_ordernum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_pop_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="订单编号："
+            android:textColor="@color/color_666666"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_pop_ordercode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/white"
+            android:drawablePadding="@dimen/dp_5"
+            android:drawableRight="@mipmap/ico_edit"
+            android:hint="请输入查询条件"
+            android:minWidth="100dp"
+            android:text=""
+            android:textColor="@color/title_bg"
+            android:textColorHint="@color/bottom_line"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pop_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_1">
+        <CheckBox
+            android:id="@+id/cb_pop_buy"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@drawable/resg_check_selector"
+            android:text="买交易"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@drawable/text_green_selector"/>
+        <CheckBox
+            android:id="@+id/cb_pop_sale"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@drawable/resg_check_selector"
+            android:text="卖交易"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@drawable/text_green_selector" />
+        <CheckBox
+            android:id="@+id/cb_pop_main"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@drawable/resg_check_selector"
+            android:text="我的交易"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@drawable/text_green_selector"
+            />
+        <CheckBox
+            android:id="@+id/cb_pop_finish"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@drawable/resg_check_selector"
+            android:text="已完成"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@drawable/text_green_selector"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="开始时间"
+            android:textColor="@color/color_666666"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/pop_starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/white"
+            android:minWidth="100dp"
+            android:text="点击选择时间"
+            android:textColor="@color/title_bg"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间"
+            android:textColor="@color/color_666666"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/pop_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击选择时间"
+            android:textColor="@color/title_bg"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:minWidth="100dp"
+            android:background="@android:color/white"
+            android:layout_marginLeft="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_10">
+        <Button
+            android:id="@+id/btn_pop_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="取消"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:background="@drawable/btn_exit_bg"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/btn_pop_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="确定"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:background="@drawable/btn_login_bg"
+            android:layout_marginBottom="10dp"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
