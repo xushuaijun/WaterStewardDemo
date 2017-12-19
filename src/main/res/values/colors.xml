@@ -8,7 +8,7 @@
     <color name="bottom_bg">#F6F6F6</color>
     <color name="bottom_font">#7D7D7D</color>
     <color name="bottom_line">#CBCBCB</color>
-    <color name="bg_color">#F3F4F6</color>
+    <color name="bg_color">#F8F8F8</color>
 
     <color name="color_333333">#333333</color>
     <color name="color_666666">#666666</color>
@@ -26,4 +26,8 @@
     <color name="color_lightblack">#22252A</color>
 
     <color name="color_80000000">#70000000</color>
+
+    <color name="color_e6e6e6">#e6e6e6</color>
+    <color name="color_969696">#969696</color>
+    <color name="color_2c2c2c">#2c2c2c</color>
 </resources>
