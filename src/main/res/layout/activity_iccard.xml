@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+    tools:context=".activity.main.ICCardActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/title_bar"/>
+        <include
+            layout="@layout/search_view"/>
+        <TextView
+            android:id="@+id/tv_shICcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="存在审核中IC卡信息……"
+            android:drawableRight="@mipmap/ico_sy_toright"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@color/color_ffff5722"
+            android:visibility="gone"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/prl_iccard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                />
+        </FrameLayout>
+    </LinearLayout>
+    <include
+        layout="@layout/activity_loading"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>
