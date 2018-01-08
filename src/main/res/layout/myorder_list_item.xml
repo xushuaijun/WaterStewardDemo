@@ -112,6 +112,31 @@
                 android:textColor="@color/color_f0AD4E"/>
         </LinearLayout>
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_10">
+        <LinearLayout
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/tv_myorderlist_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/myorder_list_remark"
+                android:textSize="@dimen/sp_15"
+                android:textColor="@color/color_ffff5722"
+                android:drawablePadding="@dimen/dp_5"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_0.5"

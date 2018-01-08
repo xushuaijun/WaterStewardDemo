@@ -85,4 +85,6 @@
     <string name="item_debug_time">调试时间:</string>
     <string name="debug_pump_info">机井基本情况</string>
 
+    <string name="myorder_list_remark">退款中如2-3日没有到账，请联系管理人员……</string>
+
 </resources>
