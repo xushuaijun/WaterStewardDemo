@@ -414,7 +414,7 @@
             />
 
         <activity
-            android:name=".activity.serve.InstallDebugActivity"
+            android:name=".activity.serve.InstallDebugWellActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode="singleTask"
             android:windowSoftInputMode="adjustPan"
@@ -491,7 +491,7 @@
             android:theme="@style/Theme.Transparent"
             />
         <activity
-            android:name=".activity.serve.InstallDebugAddActivity"
+            android:name=".activity.serve.InstallDebugWellAddActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode="singleTask"
             android:windowSoftInputMode="adjustPan"
@@ -527,6 +527,81 @@
             />
 
         <activity
+            android:name=".activity.serve.InstallDebugActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".activity.serve.InstallDebugValveActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".activity.serve.InstallDebugValveAddActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
+        <activity
+            android:name=".activity.serve.ChooseAddressActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
+        <activity
+            android:name=".activity.serve.InstallDebugGateActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".activity.serve.InstallDebugGateAddActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
+        <activity
+            android:name=".activity.serve.UploadDebugWellImageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".activity.serve.InstallDebugUnAgricultureActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".activity.serve.InstallDebugUnAgriculAddActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
+        <activity
+            android:name=".customview.EditTextListView"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@android:style/Theme.Dialog"
+            />
+
+        <activity
             android:name="com.alipay.sdk.app.H5PayActivity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"
             android:exported="false"
@@ -540,6 +615,7 @@
             android:screenOrientation="behind"
             android:windowSoftInputMode="adjustResize|stateHidden" >
         </activity>
+
 
         <provider
             android:authorities="com.xsyj.watersteward.fileprovider"
@@ -610,8 +686,6 @@
 
         <service android:name=".util.UpdateService" />
         <receiver android:name=".util.UpdateService$NotificationClickReceiver" />
-
-
 
     </application>
 

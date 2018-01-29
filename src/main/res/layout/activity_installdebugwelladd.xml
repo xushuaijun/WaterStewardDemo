@@ -1,0 +1,2326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/title_bar"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                 >
+
+                <!-- ……………………………………………………模块1开始…………………………………………………… -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    android:padding="@dimen/dp_10"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/debug_pump_info"
+                            android:textColor="@color/title_bg"
+                            android:textSize="@dimen/sp_20" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_well_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:background="@android:color/white"
+                        android:paddingBottom="@dimen/dp_5"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/debug_pump_num"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_num"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:enabled="false"/>
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:layout_marginTop="1dp"
+                        android:orientation="horizontal"
+                        android:background="@android:color/white"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/debug_pump_name"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:layout_marginTop="1dp"
+                        android:orientation="horizontal"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="机井类型："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <Spinner
+                                android:id="@+id/spn_well_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white"
+                                android:layout_marginLeft="@dimen/dp_30"
+                                android:layout_centerVertical="true"
+                                android:minWidth="150dp"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ico_sy_todown"
+                                android:paddingLeft="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:layout_marginTop="1dp"
+                        android:orientation="horizontal"
+                        android:background="@android:color/white"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="井深（m）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_wdepth"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:layout_marginTop="1dp"
+                        android:orientation="horizontal"
+                        android:background="@android:color/white"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="灌溉面积（亩）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_Well_warea"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:layout_marginTop="1dp"
+                        android:orientation="horizontal"
+                        android:background="@android:color/white"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="静水位（m）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_slvl"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 模块1结束………………………………………………………………………………………………………………………………………………………………………………模块2开始 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    android:padding="@dimen/dp_10"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/well_sbxh"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_sbxh"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="扬程（m）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_pumph"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="流量（m³/h）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_ll"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/well_sbgl"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_sbgl"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="井管内径（mm）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_jgnj"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="建井年份："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <TextView
+                            android:id="@+id/tv_well_createYear"
+                            android:layout_width="@dimen/dp_0"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="点击选择时间"
+                            android:textColor="@color/color_666666"
+                            android:gravity="center"
+                            android:textSize="@dimen/sp_16"/>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <!-- 模块2结束……………………………………………………………………………………………………………………………………模块3开始 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_10"
+                    android:background="@android:color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/znhjlsbjbqk"
+                            android:textColor="@color/title_bg"
+                            android:textSize="@dimen/sp_18" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingBottom="@dimen/dp_10"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="计量设备类型："
+                            android:textColor="@color/color_333333"
+                            android:textSize="16sp"
+                            android:gravity="center_vertical"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            >
+                            <Spinner
+                                android:id="@+id/spn_well_jlsblx"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white"
+                                android:layout_marginLeft="@dimen/dp_30"
+                                android:layout_centerVertical="true"
+                                android:minWidth="150dp"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ico_sy_todown"
+                                android:paddingLeft="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="计量设备编号:"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_jlsbbh"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="计量设备型号："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/d_well_jlsbxh"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:id="@+id/rl_well_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/dp_1"
+                        android:background="@android:color/white"
+                       >
+
+                        <TextView
+                            android:id="@+id/tv_well_jlsbbbh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="计量设备版本号："
+                            android:textColor="@color/color_333333"
+                            android:textSize="16sp"
+                            android:layout_centerVertical="true"
+                            android:paddingTop="@dimen/dp_10"
+                            android:paddingBottom="@dimen/dp_10"
+                            />
+
+                        <EditText
+                            android:id="@+id/et_well_jlsbbbh"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                        <!--android:drawableRight="@mipmap/ico_edit"-->
+
+                        <TextView
+                            android:layout_width="@dimen/dp_50"
+                            android:layout_height="wrap_content"
+                            android:drawableRight="@mipmap/cx_zk02"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingBottom="@dimen/dp_10"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="计量设备口径："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            >
+                            <Spinner
+                                android:id="@+id/spn_well_jlsbkj"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white"
+                                android:layout_marginLeft="@dimen/dp_30"
+                                android:layout_centerVertical="true"
+                                android:minWidth="150dp"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ico_sy_todown"
+                                android:paddingLeft="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="GPRS编号："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_gprsnum"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                       >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="手机卡号："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_sjkh"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="流量套餐："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_lltc"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingBottom="@dimen/dp_10"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="控制设备类型："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <Spinner
+                                android:id="@+id/spn_well_kzsblx"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white"
+                                android:layout_marginLeft="@dimen/dp_30"
+                                android:layout_centerVertical="true"
+                                android:minWidth="150dp"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ico_sy_todown"
+                                android:paddingLeft="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="控制设备型号："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16"
+                            android:gravity="center_vertical"/>
+
+                        <EditText
+                            android:id="@+id/et_well_kzsbxh"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/setupdata"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="控制设备编号："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16"
+                            android:gravity="center_vertical"/>
+                        <EditText
+                            android:id="@+id/et_well_kzsbbh"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/dp_debuginstall"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="控制设备地址："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <EditText
+                            android:id="@+id/et_well_kzsbdz"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="控制设备版本号："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <EditText
+                            android:id="@+id/et_well_kzsbbbh"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/dp_debuginstall"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="计量设备厂家："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <EditText
+                            android:id="@+id/et_well_jlsbcj"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/dp_debuginstall"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="控制设备厂家："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <EditText
+                            android:id="@+id/et_well_kzsbcj"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingBottom="@dimen/dp_10"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="移动运营商："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            >
+                            <Spinner
+                                android:id="@+id/spn_well_ydyys"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white"
+                                android:layout_marginLeft="@dimen/dp_30"
+                                android:layout_centerVertical="true"
+                                android:minWidth="150dp"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ico_sy_todown"
+                                android:paddingLeft="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!-- 模块3结束……………………………………………………………………………………………………………………模块4开始 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    android:padding="@dimen/dp_10"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="参数信息"
+                            android:textColor="@color/title_bg"
+                            android:textSize="@dimen/sp_20" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="过载保护值（瓦）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_gzbhz"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+                    <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_color"
+                    />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="刷卡是否停泵延时："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_well_sktbys"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <RadioButton
+                                android:id="@+id/rb_well_sks"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="是"
+                                android:textColor="@drawable/rg_orange_selector"
+                                android:button="@drawable/resg_check_selector"
+                                android:textSize="@dimen/sp_16"
+                                android:layout_marginRight="@dimen/dp_10">
+                            </RadioButton>
+
+                            <RadioButton
+                                android:id="@+id/rb_well_skf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="否"
+                                android:textColor="@drawable/rg_orange_selector"
+                                android:button="@drawable/resg_check_selector"
+                                android:textSize="@dimen/sp_16"
+                                android:layout_marginRight="@dimen/dp_10">
+                            </RadioButton>
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="上电是否工作："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_well_sdsfgz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <RadioButton
+                                android:id="@+id/rb_well_sds"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="是"
+                                android:textColor="@drawable/rg_orange_selector"
+                                android:button="@drawable/resg_check_selector"
+                                android:textSize="@dimen/sp_16"
+                                android:layout_marginRight="@dimen/dp_10">
+                            </RadioButton>
+
+                            <RadioButton
+                                android:id="@+id/rb_well_sdf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="否"
+                                android:textColor="@drawable/rg_orange_selector"
+                                android:button="@drawable/resg_check_selector"
+                                android:textSize="@dimen/sp_16"
+                                android:layout_marginRight="@dimen/dp_10">
+                            </RadioButton>
+                        </RadioGroup>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现场电流A（安）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+et
+                        <EditText
+                            android:id="@+id/et_well_xcdl"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现场电流B（安）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <EditText
+                            android:id="@+id/et_well_xcdlB"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现场电流C（安）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <EditText
+                            android:id="@+id/et_well_xcdlc"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现场电压（伏）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_xcdy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="信号质量："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_xhzl"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="刷卡是否正常："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_well_sksfzc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <RadioButton
+                                android:id="@+id/rb_well_skzs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="是"
+                                android:textColor="@drawable/rg_orange_selector"
+                                android:button="@drawable/resg_check_selector"
+                                android:textSize="@dimen/sp_16"
+                                android:layout_marginRight="@dimen/dp_10">
+                            </RadioButton>
+
+                            <RadioButton
+                                android:id="@+id/rb_well_skzf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="否"
+                                android:textColor="@drawable/rg_orange_selector"
+                                android:button="@drawable/resg_check_selector"
+                                android:textSize="@dimen/sp_16"
+                                android:layout_marginRight="@dimen/dp_10">
+                            </RadioButton>
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="水泵运行是否正常："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_well_sbyxsfzc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <RadioButton
+                                android:id="@+id/rb_well_sbys"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="是"
+                                android:textColor="@drawable/rg_orange_selector"
+                                android:button="@drawable/resg_check_selector"
+                                android:textSize="@dimen/sp_16"
+                                android:layout_marginRight="@dimen/dp_10">
+                            </RadioButton>
+
+                            <RadioButton
+                                android:id="@+id/rb_well_sbyf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="否"
+                                android:textColor="@drawable/rg_orange_selector"
+                                android:button="@drawable/resg_check_selector"
+                                android:textSize="@dimen/sp_16"
+                                android:layout_marginRight="@dimen/dp_10">
+                            </RadioButton>
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        android:visibility="gone"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:visibility="gone"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="水表度数："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_sbds"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="计量设备底数（m³）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_lljds"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="瞬时流量（m³/h）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_ssll"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_color"
+                    />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="电表底数（度）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_dbds"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 模块4结束……………………………………………………………………………………………………………………模块5开始 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    android:padding="@dimen/dp_10"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="安装调试信息"
+                            android:textColor="@color/title_bg"
+                            android:textSize="@dimen/sp_18" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现场有无井房："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_well_xcywjf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <RadioButton
+                                android:id="@+id/rb_well_jfy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="有"
+                                android:textColor="@drawable/rg_orange_selector"
+                                android:button="@drawable/resg_check_selector"
+                                android:textSize="@dimen/sp_16"
+                                android:layout_marginRight="@dimen/dp_10">
+                            </RadioButton>
+
+                            <RadioButton
+                                android:id="@+id/rb_well_jfw"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="无"
+                                android:textColor="@drawable/rg_orange_selector"
+                                android:button="@drawable/resg_check_selector"
+                                android:textSize="@dimen/sp_16"
+                                android:layout_marginRight="@dimen/dp_10">
+                            </RadioButton>
+                        </RadioGroup>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有无启动柜："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_well_ywqdg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <RadioButton
+                                android:id="@+id/rb_well_qdgy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="有"
+                                android:textColor="@drawable/rg_orange_selector"
+                                android:button="@drawable/resg_check_selector"
+                                android:textSize="@dimen/sp_16"
+                                android:layout_marginRight="@dimen/dp_10">
+                            </RadioButton>
+
+                            <RadioButton
+                                android:id="@+id/rb_well_qdgw"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="无"
+                                android:textColor="@drawable/rg_orange_selector"
+                                android:button="@drawable/resg_check_selector"
+                                android:textSize="@dimen/sp_16"
+                                android:layout_marginRight="@dimen/dp_10">
+                            </RadioButton>
+                        </RadioGroup>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/dp_debuginstall">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="流量计安装位置："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            >
+                            <Spinner
+                                android:id="@+id/spn_well_lljazwz"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white"
+                                android:layout_marginLeft="@dimen/dp_30"
+                                android:layout_centerVertical="true"
+                                android:minWidth="150dp"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ico_sy_todown"
+                                android:paddingLeft="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+                        <EditText
+                            android:id="@+id/et_well_lljazwz"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="安装方式："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_well_azfs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <RadioButton
+                                android:id="@+id/rb_well_azjf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="井房"
+                                android:textColor="@drawable/rg_orange_selector"
+                                android:button="@drawable/resg_check_selector"
+                                android:textSize="@dimen/sp_16"
+                                android:layout_marginRight="@dimen/dp_10">
+                            </RadioButton>
+
+                            <RadioButton
+                                android:id="@+id/rb_well_azbg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="壁挂"
+                                android:textColor="@drawable/rg_orange_selector"
+                                android:button="@drawable/resg_check_selector"
+                                android:textSize="@dimen/sp_16"
+                                android:layout_marginRight="@dimen/dp_10">
+                            </RadioButton>
+                        </RadioGroup>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="流量计距设备距离（m）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_lljkzjl"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/dp_debuginstall">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="使用单位："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_sydw"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="负  责  人："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_fzr"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                           />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="负责人电话："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_fzrdh"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="phone"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/dp_debuginstall">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="施工单位："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_sgdw"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="调  试  人："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/tv_well_tsr"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="调试人电话："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_tsrdh"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="phone"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="安装时间："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <TextView
+                            android:id="@+id/tv_well_time"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:hint="点击选择时间"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_1"
+                        android:background="@android:color/white"
+                        android:minHeight="@dimen/dp_45">
+
+                        <TextView
+                            android:id="@+id/tv_well_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="地        址："
+                            android:textColor="@color/color_333333"
+                            android:textSize="16sp"
+                            android:layout_centerVertical="true"
+                            />
+                        <EditText
+                            android:id="@+id/et_well_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/tv_well_address"
+                            android:text=""
+                            android:hint="点击选择地址"
+                            android:textColor="@color/color_666666"
+                            android:textSize="16sp"
+                            android:minWidth="50dp"
+                            android:background="@android:color/white"
+                            android:drawablePadding="@dimen/dp_5"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="@dimen/dp_50"
+                            android:focusable="false"
+                            android:layout_centerVertical="true"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_well_chooseAddress"
+                            android:layout_width="@dimen/dp_50"
+                            android:layout_height="wrap_content"
+                            android:drawableRight="@mipmap/cx_zk02"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            />
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="县乡村："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <TextView
+                            android:id="@+id/tv_well_xian"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:hint="县"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                        <TextView
+                            android:id="@+id/tv_well_xiang"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:hint="乡"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                        <TextView
+                            android:id="@+id/tv_well_cun"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:hint="村"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/dp_debuginstall">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="详细地址："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_well_xxdz"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/white"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="经度："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <TextView
+                            android:id="@+id/tv_well_jd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/white"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="纬度："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <TextView
+                            android:id="@+id/tv_well_wd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <Button
+                        android:id="@+id/btn_debugwell_attachment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="附件"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/btn_login_bg"
+                        android:layout_marginBottom="@dimen/dp_15"
+                        android:visibility="gone"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                       >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:background="@android:color/white"
+                            android:text="照片"
+                            android:textColor="@color/color_333333"
+                            android:textSize="16sp"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="@dimen/dp_10"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:background="@android:color/white"
+                            android:text="流量计照片，控制器照片，一张整体的照片"
+                            android:textColor="@color/color_666666"
+                            android:textSize="14sp"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="@dimen/dp_10"
+                            android:paddingLeft="@dimen/dp_10"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dp_1"
+                        android:paddingRight="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_15"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingBottom="30dp"
+                        android:background="@android:color/white"
+                        >
+                        <com.xsyj.watersteward.customview.MyGridView
+                            android:id="@+id/gv_well_uploadimg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fadingEdge="none"
+                            android:fadingEdgeLength="0dp"
+                            android:listSelector="@android:color/transparent"
+                            android:numColumns="3"
+                            android:scrollingCache="false"
+                            android:horizontalSpacing="10dp"
+                            android:verticalSpacing="5dp"
+                            tools:layout_editor_absoluteY="0dp"
+                            tools:layout_editor_absoluteX="8dp">
+                        </com.xsyj.watersteward.customview.MyGridView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+
+    <include
+        layout="@layout/activity_loading"
+        android:visibility="gone"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,2175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/title_bar"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                 >
+
+                <!-- ……………………………………………………模块1开始…………………………………………………… -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    android:padding="@dimen/dp_10"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/debug_pump_info"
+                            android:textColor="@color/title_bg"
+                            android:textSize="@dimen/sp_20" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_unAgricul_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:background="@android:color/white"
+                        android:paddingBottom="@dimen/dp_5"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="监测站编号："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_stationNo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            />
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:layout_marginTop="1dp"
+                        android:orientation="horizontal"
+                        android:background="@android:color/white"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="监测站名称："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_stationName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:layout_marginTop="1dp"
+                        android:orientation="horizontal"
+                        android:background="@android:color/white"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="取水户编号："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_waterUserNo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:layout_marginTop="1dp"
+                        android:orientation="horizontal"
+                        android:background="@android:color/white"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="取水户名称："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_waterUserName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:orientation="horizontal"
+                        android:background="@android:color/white"
+                        android:minHeight="@dimen/dp_debuginstall"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="发证机关："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_licenseNo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:orientation="horizontal"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/dp_debuginstall"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="管理部门："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_managerDepartment"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 模块1结束………………………………………………………………………………………………………………………………………………………………………………模块2开始 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    android:padding="@dimen/dp_10"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="联系人："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+c
+                        <EditText
+                            android:id="@+id/et_unAgricul_contactor"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="联系电话："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_contactorPhone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="phone"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="取水类型："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            >
+                            <Spinner
+                                android:id="@+id/sp_unAgricul_obtainType"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white"
+                                android:layout_marginLeft="@dimen/dp_30"
+                                android:layout_centerVertical="true"
+                                android:minWidth="150dp"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ico_sy_todown"
+                                android:paddingLeft="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- 模块2结束……………………………………………………………………………………………………………………………………模块3开始 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_10"
+                    android:background="@android:color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/znhjlsbjbqk"
+                            android:textColor="@color/title_bg"
+                            android:textSize="@dimen/sp_18" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="设备编号（GPRS）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="16sp"
+                            android:gravity="center_vertical"
+                            />
+                        <EditText
+                            android:id="@+id/et_unAgricul_gprsNo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="设备型号:"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_type"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/dp_debuginstall">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="设备厂家："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_factory"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:id="@+id/rl_unAgricul_SimNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/dp_1"
+                        android:background="@android:color/white"
+                       >
+
+                        <TextView
+                            android:id="@+id/tv_unAgricul_SIM"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SIM卡："
+                            android:textColor="@color/color_333333"
+                            android:textSize="16sp"
+                            android:layout_centerVertical="true"
+                            android:paddingTop="@dimen/dp_10"
+                            android:paddingBottom="@dimen/dp_10"
+                            />
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_SimNo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                        <!--android:drawableRight="@mipmap/ico_edit"-->
+
+                        <TextView
+                            android:layout_width="@dimen/dp_50"
+                            android:layout_height="wrap_content"
+                            android:drawableRight="@mipmap/cx_zk02"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            />
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="运营商："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            >
+                            <Spinner
+                                android:id="@+id/spn_unAgricul_mobileOperator"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white"
+                                android:layout_marginLeft="@dimen/dp_30"
+                                android:layout_centerVertical="true"
+                                android:minWidth="150dp"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ico_sy_todown"
+                                android:paddingLeft="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_mobileOperator"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/dp_debuginstall"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="套餐："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_dataPlan"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="网络类型："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            >
+                            <Spinner
+                                android:id="@+id/spn_unAgricul_nettype"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white"
+                                android:layout_marginLeft="@dimen/dp_30"
+                                android:layout_centerVertical="true"
+                                android:minWidth="150dp"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ico_sy_todown"
+                                android:paddingLeft="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                       >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="供电方式："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            >
+                            <Spinner
+                                android:id="@+id/spn_unAgricul_powerType"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white"
+                                android:layout_marginLeft="@dimen/dp_30"
+                                android:layout_centerVertical="true"
+                                android:minWidth="150dp"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ico_sy_todown"
+                                android:paddingLeft="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="太阳能板型号："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_solarModel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="充电控制器型号："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16"
+                            />
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_chargerModel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="蓄电池型号："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16"
+                            android:gravity="center_vertical"/>
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_batteryModel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/setupdata"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="计量类型："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16"
+                            android:gravity="center_vertical"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <Spinner
+                                android:id="@+id/spn_unAgricul_measurementType"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white"
+                                android:layout_marginLeft="@dimen/dp_30"
+                                android:layout_centerVertical="true"
+                                android:minWidth="150dp"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ico_sy_todown"
+                                android:paddingLeft="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="流量计类型："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <Spinner
+                                android:id="@+id/spn_unAgricul_flowmeterType"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white"
+                                android:layout_marginLeft="@dimen/dp_30"
+                                android:layout_centerVertical="true"
+                                android:minWidth="150dp"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ico_sy_todown"
+                                android:paddingLeft="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="流量计安装方式："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <Spinner
+                                android:id="@+id/spn_unAgricul_flowmeterInstallType"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white"
+                                android:layout_marginLeft="@dimen/dp_30"
+                                android:layout_centerVertical="true"
+                                android:minWidth="150dp"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ico_sy_todown"
+                                android:paddingLeft="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="流量计型号："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <EditText
+                            android:id="@+id/et_unAgricul_flowmeterModel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/dp_debuginstall"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="生产厂家："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <EditText
+                            android:id="@+id/et_unAgricul_creatorProducer"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingBottom="@dimen/dp_10"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="输出方式："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            >
+                            <Spinner
+                                android:id="@+id/spn_unAgricul_outPutType"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white"
+                                android:layout_marginLeft="@dimen/dp_30"
+                                android:layout_centerVertical="true"
+                                android:minWidth="150dp"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ico_sy_todown"
+                                android:paddingLeft="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:background="@android:color/white"
+                android:padding="@dimen/dp_10"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="渠道信息"
+                        android:textColor="@color/title_bg"
+                        android:textSize="@dimen/sp_20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_debuginstall"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="渠道形状："
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/sp_16" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        >
+                        <Spinner
+                            android:id="@+id/spn_unAgricul_channelShape"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:layout_marginLeft="@dimen/dp_30"
+                            android:layout_centerVertical="true"
+                            android:minWidth="150dp"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ico_sy_todown"
+                            android:paddingLeft="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_color"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_debuginstall"
+                    android:paddingTop="@dimen/dp_5"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="渠道材质："
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/sp_16" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        >
+                        <Spinner
+                            android:id="@+id/spn_unAgricul_channelMaterial"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:layout_marginLeft="@dimen/dp_30"
+                            android:layout_centerVertical="true"
+                            android:minWidth="150dp"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ico_sy_todown"
+                            android:paddingLeft="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_color"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_debuginstall"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="渠道底宽（m）："
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/sp_16" />
+                    <EditText
+                        android:id="@+id/et_unAgricul_cBottomWidth"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:padding="10dp"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/sp_16"
+                        android:inputType="numberDecimal"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_color"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_debuginstall"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="渠道高度（m）："
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/sp_16" />
+                    <EditText
+                        android:id="@+id/et_unAgricul_channelHeight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:padding="10dp"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/sp_16"
+                        android:inputType="numberDecimal"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_color"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_debuginstall"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="渠道顶宽（m）："
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/sp_16" />
+                    <EditText
+                        android:id="@+id/et_unAgricul_channelSize"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:padding="10dp"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/sp_16"
+                        android:inputType="numberDecimal"/>
+                </LinearLayout>
+
+                <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bg_color"
+                />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_debuginstall"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="边坡系数（%）："
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/sp_16" />
+                    <EditText
+                        android:id="@+id/et_unAgricul_SlopeCoefficient"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:padding="10dp"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/sp_16"
+                        android:inputType="numberDecimal"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_color"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_debuginstall"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="坡降比（%）："
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/sp_16" />
+                    <EditText
+                        android:id="@+id/et_unAgricul_confSlope"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/white"
+                        android:padding="10dp"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/sp_16"
+                        android:inputType="numberDecimal"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+                <!-- 模块3结束……………………………………………………………………………………………………………………模块4开始 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    android:padding="@dimen/dp_10"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="参数信息"
+                            android:textColor="@color/title_bg"
+                            android:textSize="@dimen/sp_20" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="流量计底数（m³）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_confFlowmeterValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="采集终端底数（m³）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <EditText
+                            android:id="@+id/et_unAgricul_confAcquisitionTerminal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="太阳能板开路电压（伏）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <EditText
+                            android:id="@+id/et_unAgricul_confSolarVoltage"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="蓄电池开路电压（伏）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <EditText
+                            android:id="@+id/et_unAgricul_confBatteryVoltage"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="充电控制器输入电压（伏）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <EditText
+                            android:id="@+id/et_unAgricul_confChargerInVoltage"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="充电控制输出电压（伏）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <EditText
+                            android:id="@+id/et_unAgricul_confChargerOutVoltage"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="充电控制器控制电压（伏）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <EditText
+                            android:id="@+id/et_unAgricul_confChargerControlVoltage"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="控制设备显示值："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <EditText
+                            android:id="@+id/et_unAgricul_ControlValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+                   </LinearLayout>
+
+                <!-- 模块4结束……………………………………………………………………………………………………………………模块5开始 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    android:padding="@dimen/dp_10"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="安装调试信息"
+                            android:textColor="@color/title_bg"
+                            android:textSize="@dimen/sp_18" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/dp_debuginstall">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="计量设备前直管段距离（m）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <EditText
+                            android:id="@+id/et_unAgricul_beforePosition"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/dp_debuginstall">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="计量设备后直管段距离（m）："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <EditText
+                            android:id="@+id/et_unAgricul_afterPosition"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="numberDecimal"/>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/dp_debuginstall">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="控制箱安装位置："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            >
+                            <Spinner
+                                android:id="@+id/sp_unAgricul_controlPostion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white"
+                                android:layout_marginLeft="@dimen/dp_30"
+                                android:layout_centerVertical="true"
+                                android:minWidth="150dp"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ico_sy_todown"
+                                android:paddingLeft="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_controlPostion"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="流量计安装位置："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            >
+                            <Spinner
+                                android:id="@+id/sp_unAgricul_flowmeterPostion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white"
+                                android:layout_marginLeft="@dimen/dp_30"
+                                android:layout_centerVertical="true"
+                                android:minWidth="150dp"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ico_sy_todown"
+                                android:paddingLeft="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/dp_debuginstall">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="使用单位："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_usedUnit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="负责人："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_personCharge"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="负责人联系电话："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_personPhone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="phone"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/dp_debuginstall">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="施工单位："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_constructionUnit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="调试人："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_debugPerson"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="调试人电话："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_debugerPhone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="phone"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="安装时间："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <TextView
+                            android:id="@+id/tv_unAgricul_time"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:hint="点击选择时间"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_1"
+                        android:background="@android:color/white"
+                        android:minHeight="@dimen/dp_debuginstall">
+
+                        <TextView
+                            android:id="@+id/tv_unAgricul_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="地        址："
+                            android:textColor="@color/color_333333"
+                            android:textSize="16sp"
+                            android:layout_centerVertical="true"
+                            />
+                        <EditText
+                            android:id="@+id/et_unAgricul_area"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/tv_unAgricul_area"
+                            android:text=""
+                            android:hint="点击选择地址"
+                            android:textColor="@color/color_666666"
+                            android:textSize="16sp"
+                            android:layout_centerVertical="true"
+                            android:minWidth="50dp"
+                            android:background="@android:color/white"
+                            android:drawablePadding="@dimen/dp_5"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="@dimen/dp_50"
+                            android:focusable="false"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_unAgricul_chooseArea"
+                            android:layout_width="@dimen/dp_50"
+                            android:layout_height="wrap_content"
+                            android:drawableRight="@mipmap/cx_zk02"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            />
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/dp_debuginstall">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="详细地址："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <EditText
+                            android:id="@+id/et_unAgricul_address"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/white"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="经度："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <TextView
+                            android:id="@+id/tv_unAgricul_longtitude"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="1dp"
+                        android:background="@android:color/white"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="纬度："
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/sp_16" />
+
+                        <TextView
+                            android:id="@+id/tv_unAgricul_latitude"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_16" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_color"/>
+
+                    <Button
+                        android:id="@+id/btn_unAgricul_attachment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="附件"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:background="@drawable/btn_login_bg"
+                        android:layout_marginBottom="@dimen/dp_15"
+                        android:visibility="gone"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_debuginstall"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                       >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:background="@android:color/white"
+                            android:text="照片"
+                            android:textColor="@color/color_333333"
+                            android:textSize="16sp"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="@dimen/dp_10"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:background="@android:color/white"
+                            android:text="流量计照片，控制器照片，一张整体的照片"
+                            android:textColor="@color/color_666666"
+                            android:textSize="14sp"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="@dimen/dp_10"
+                            android:paddingLeft="@dimen/dp_10"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dp_1"
+                        android:paddingRight="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_15"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingBottom="30dp"
+                        android:background="@android:color/white"
+                        >
+                        <com.xsyj.watersteward.customview.MyGridView
+                            android:id="@+id/gv_unAgricul_uploadimg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fadingEdge="none"
+                            android:fadingEdgeLength="0dp"
+                            android:listSelector="@android:color/transparent"
+                            android:numColumns="3"
+                            android:scrollingCache="false"
+                            android:horizontalSpacing="10dp"
+                            android:verticalSpacing="5dp"
+                            tools:layout_editor_absoluteY="0dp"
+                            tools:layout_editor_absoluteX="8dp">
+                        </com.xsyj.watersteward.customview.MyGridView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+
+    <include
+        layout="@layout/activity_loading"
+        android:visibility="gone"
+        />
+
+
+
+
+</RelativeLayout>

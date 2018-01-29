@@ -56,10 +56,10 @@
     <string name="debug_submit">提交</string>
     <string name="debug_pump">水泵基本情况</string>
     <string name="well_sbxh">水泵型号：</string>
-    <string name="well_sbgl">功率：</string>
+    <string name="well_sbgl">功率（kw）：</string>
     <string name="well_sbms">水泵埋深：</string>
     <string name="well_cskj"> 水管口径：</string>
-    <string name="znhjlsbjbqk">智能化计量设备基本情况</string>
+    <string name="znhjlsbjbqk">设备信息</string>
     <string name="well_kzsbxh">控制设备型号：</string>
     <string name="well_kzsbbh">控制设备编号：</string>
     <string name="well_jlsblx">计量设备类型：</string>
@@ -83,7 +83,7 @@
     <string name="well_tspeople">调   试   人：</string>
     <string name="well_jspeople">经   手   人：</string>
     <string name="item_debug_time">调试时间:</string>
-    <string name="debug_pump_info">机井基本情况</string>
+    <string name="debug_pump_info">基础信息</string>
 
     <string name="myorder_list_remark">退款中如2-3日没有到账，请联系管理人员……</string>
 

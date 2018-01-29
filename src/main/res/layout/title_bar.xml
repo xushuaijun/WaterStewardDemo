@@ -169,6 +169,22 @@
         android:layout_below="@id/paddingView"
         />
 
+    <TextView
+        android:id="@+id/tv_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="跳过"
+        android:layout_toLeftOf="@id/img_add"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:paddingRight="10dp"
+        android:visibility="gone"
+        android:layout_below="@id/paddingView"
+        android:autoLink="all"
+        android:paddingLeft="@dimen/dp_30"
+        />
+
 
 
 </RelativeLayout>

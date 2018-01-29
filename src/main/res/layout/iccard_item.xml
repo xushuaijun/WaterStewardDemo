@@ -21,7 +21,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@color/bottom_font"
-                android:text="编辑"
+                android:text="查看"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/sp_20"
                 android:visibility="gone"
@@ -45,7 +45,8 @@
             android:descendantFocusability="blocksDescendants"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="@dimen/dp_10">
+            android:padding="@dimen/dp_10"
+            android:id="@+id/ll_carditem">
 
             <!--第一行-->
             <LinearLayout
@@ -155,6 +156,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20dp"
                     android:layout_weight="1"
+                    android:visibility="gone"
                     >
 
                     <LinearLayout

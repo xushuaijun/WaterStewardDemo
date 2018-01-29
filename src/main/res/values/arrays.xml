@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="wellType">
+		<item>农业井</item>
+		<item>生活井</item>
+	</string-array>
+	<string-array name="meteringType">
+		<item>超声波流量计</item>
+		<item>电磁流量计</item>
+		<item>水表</item>
+	</string-array>
+	<string-array name="meteringDaimeter">
+		<item>DN50</item>
+		<item>DN80</item>
+		<item>DN100</item>
+		<item>DN125</item>
+		<item>DN150</item>
+		<item>DN200</item>
+		<item>DN250</item>
+		<item>DN300</item>
+	</string-array>
+	<string-array name="controlType">
+		<item>机井用水IC卡控管理终端</item>
+		<item>机井用水IC卡控节能管理终端</item>
+		<item>机井用水IC卡控恒压管理终端</item>
+		<item>遥测终端机</item>
+	</string-array>
+	<string-array name="mobileOperator">
+		<item>移动</item>
+		<item>联通</item>
+		<item>电信</item>
+	</string-array>
+
+	<string-array name="installWhereIsFlowmeter">
+		<item>室内</item>
+		<item>室外</item>
+		<item>井房内</item>
+		<item>井房外</item>
+		<item>阀门井</item>
+	</string-array>
+
+	<string-array name="netType">
+		<item>专网</item>
+		<item>公网</item>
+	</string-array>
+
+	<string-array name="obtainType">
+		<item>地表水</item>
+		<item>地下水</item>
+	</string-array>
+	<string-array name="powerType">
+		<item>太阳能</item>
+		<item>市电</item>
+		<item>太阳能/市电</item>
+	</string-array>
+	<string-array name="measurementType">
+		<item>管道型</item>
+		<item>水位型</item>
+	</string-array>
+	<string-array name="flowmeterTypeG">
+		<item>超声波</item>
+		<item>电磁</item>
+		<item>水表</item>
+	</string-array>
+	<string-array name="flowmeterTypeS">
+		<item>水位计</item>
+		<item>多普勒</item>
+	</string-array>
+	<string-array name="flowmeterInstallTypeG">
+		<item>内插式</item>
+		<item>外夹式</item>
+		<item>管段式</item>
+	</string-array>
+	<string-array name="flowmeterInstallTypeS">
+		<item>底座式</item>
+		<item>立杆式</item>
+	</string-array>
+	<string-array name="outPutType">
+		<item>脉冲</item>
+		<item>光电</item>
+		<item>485</item>
+		<item>无线</item>
+	</string-array>
+	<string-array name="channelShape">
+		<item>T形</item>
+		<item>U形</item>
+		<item>矩形</item>
+	</string-array>
+	<string-array name="channelMaterial">
+		<item>粘土</item>
+		<item>毛石混凝土</item>
+		<item>混凝土</item>
+	</string-array>
+	<string-array name="flowmeterPostion">
+		<item>室内</item>
+		<item>室外</item>
+		<item>阀门井</item>
+	</string-array>
+
+	<string-array name="controlPostion">
+		<item>室内壁挂</item>
+		<item>室外壁挂</item>
+		<item>表井安装</item>
+		<item>室外立杆</item>
+	</string-array>
+
+    <string-array name="gateMaterial">
+        <item>不锈钢</item>
+        <item>铝合金</item>
+    </string-array>
+
+    <string-array name="gateMeasurementType">
+        <item>前后水位</item>
+        <item>多普勒</item>
+        <item>分层计量型</item>
+    </string-array>
+
+    <string-array name="gateOutputType">
+        <item>脉冲</item>
+        <item>4-20毫安</item>
+        <item>485</item>
+        <item>无线</item>
+    </string-array>
+
+    <string-array name="gateChannelType">
+        <item>U形</item>
+        <item>梯形</item>
+        <item>矩形</item>
+    </string-array>
+
+</resources>
