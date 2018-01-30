@@ -8,4 +8,11 @@
         </attr>
         <attr name="hint" format="string|reference" />
     </declare-styleable>
+
+
+    <declare-styleable name="MySearchView">
+        <attr name="my_search_view_key" format="string|reference" />
+        <attr name="my_search_view_keyType" format="string|reference" />
+    </declare-styleable>
+
 </resources>
