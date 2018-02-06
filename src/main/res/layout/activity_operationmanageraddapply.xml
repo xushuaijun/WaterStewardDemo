@@ -34,7 +34,7 @@
                     android:id="@+id/tv_opermanageapply_address"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="地址"
+                    android:text="地   址："
                     android:textColor="@color/color_666666"
                     android:textSize="16sp"
                     android:layout_centerVertical="true"
@@ -82,7 +82,7 @@
                     android:id="@+id/tv_opermanageapply_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="报修人"
+                    android:text="报修人："
                     android:textColor="@color/color_666666"
                     android:textSize="16sp"
                     android:layout_centerVertical="true"
@@ -100,6 +100,7 @@
                     android:background="@android:color/white"
                     android:drawablePadding="@dimen/dp_5"
                     android:layout_marginLeft="10dp"
+                    android:layout_centerHorizontal="true"
                     />
 
             </RelativeLayout>
@@ -116,7 +117,7 @@
                     android:id="@+id/tv_opermanageapply_phone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="电话"
+                    android:text="电   话："
                     android:textColor="@color/color_666666"
                     android:textSize="16sp"
                     android:layout_centerVertical="true"
@@ -134,6 +135,7 @@
                     android:background="@android:color/white"
                     android:drawablePadding="@dimen/dp_5"
                     android:layout_marginLeft="10dp"
+                    android:inputType="phone"
                     />
 
             </RelativeLayout>
@@ -150,7 +152,7 @@
                     android:id="@+id/tv_opermanageapply_timeview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="报修时间"
+                    android:text="报修时间："
                     android:textColor="@color/color_666666"
                     android:textSize="16sp"
                     android:layout_centerVertical="true"
@@ -188,7 +190,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="报修设备"
+                    android:text="报修设备："
                     android:textColor="@color/color_666666"
                     android:textSize="16sp"
                     />
@@ -201,8 +203,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="点击添加报修设备"
-                        android:gravity="center"
                         android:textColor="@color/color_666666"
+                        android:paddingLeft="10dp"
                         android:textSize="16sp"
                         />
                     <ImageView
@@ -235,7 +237,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="清单列表"
+                    android:text="清单列表："
                     android:textColor="@color/color_666666"
                     android:textSize="16sp"
                     />
@@ -248,7 +250,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="点击添加清单列表"
-                        android:gravity="center"
+                        android:paddingLeft="10dp"
                         android:textColor="@color/color_666666"
                         android:textSize="16sp"
                         />
@@ -294,7 +296,7 @@
                 android:layout_height="wrap_content"
                 android:background="@android:color/white"
                 android:padding="@dimen/dp_10"
-                android:text="报修程度"
+                android:text="报修程度："
                 android:textColor="@color/color_333333"
                 android:textSize="@dimen/sp_16"/>
             <RadioGroup
@@ -346,7 +348,7 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/white"
                     android:padding="@dimen/dp_10"
-                    android:text="审批状态"
+                    android:text="审批状态："
                     android:textColor="@color/color_333333"
                     android:textSize="@dimen/sp_16"/>
 
@@ -419,7 +421,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="审核人"
+                        android:text="村级水管员："
                         android:textColor="@color/color_666666"
                         android:textSize="16sp"
                         android:layout_centerVertical="true"
@@ -452,7 +454,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="日    期"
+                        android:text="日    期："
                         android:textColor="@color/color_666666"
                         android:textSize="16sp"
                         android:layout_centerVertical="true"
@@ -485,7 +487,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="审批人"
+                        android:text="村级审批人："
                         android:textColor="@color/color_666666"
                         android:textSize="16sp"
                         android:layout_centerVertical="true"
@@ -517,7 +519,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="日    期"
+                        android:text="日    期："
                         android:textColor="@color/color_666666"
                         android:textSize="16sp"
                         android:layout_centerVertical="true"
@@ -568,7 +570,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="@dimen/dp_5">
+                android:layout_marginTop="@dimen/dp_5"
+                android:visibility="gone">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -586,12 +589,13 @@
                     android:layout_marginTop="@dimen/dp_1"
                     android:background="@android:color/white"
                     android:orientation="horizontal"
+                    android:visibility="gone"
                     >
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="审核人"
+                        android:text="审核人："
                         android:textColor="@color/color_666666"
                         android:textSize="16sp"
                         android:layout_centerVertical="true"
@@ -625,7 +629,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="日    期"
+                        android:text="日    期："
                         android:textColor="@color/color_666666"
                         android:textSize="16sp"
                         android:layout_centerVertical="true"
@@ -657,7 +661,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="审批人"
+                        android:text="审批人："
                         android:textColor="@color/color_666666"
                         android:textSize="16sp"
                         android:layout_centerVertical="true"
@@ -690,7 +694,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="日    期"
+                        android:text="日    期："
                         android:textColor="@color/color_666666"
                         android:textSize="16sp"
                         android:layout_centerVertical="true"
@@ -737,10 +741,12 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/ll_opermanageapply_nxh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="@dimen/dp_5">
+                android:layout_marginTop="@dimen/dp_5"
+                android:visibility="gone">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -758,12 +764,13 @@
                     android:layout_marginTop="@dimen/dp_1"
                     android:background="@android:color/white"
                     android:orientation="horizontal"
+                    android:visibility="gone"
                     >
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="审核人"
+                        android:text="审核人："
                         android:textColor="@color/color_666666"
                         android:textSize="16sp"
                         android:layout_centerVertical="true"
@@ -792,12 +799,13 @@
                     android:layout_marginTop="@dimen/dp_1"
                     android:background="@android:color/white"
                     android:orientation="horizontal"
+                    android:visibility="gone"
                     >
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="日    期"
+                        android:text="日    期："
                         android:textColor="@color/color_666666"
                         android:textSize="16sp"
                         android:layout_centerVertical="true"
@@ -830,7 +838,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="审批人"
+                        android:text="审批人："
                         android:textColor="@color/color_666666"
                         android:textSize="16sp"
                         android:layout_centerVertical="true"
@@ -863,7 +871,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="日    期"
+                        android:text="日    期："
                         android:textColor="@color/color_666666"
                         android:textSize="16sp"
                         android:layout_centerVertical="true"
@@ -915,7 +923,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="@dimen/dp_5">
+                android:layout_marginTop="@dimen/dp_5"
+                android:visibility="gone">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -938,7 +947,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="审核人"
+                        android:text="审核人："
                         android:textColor="@color/color_666666"
                         android:textSize="16sp"
                         android:layout_centerVertical="true"
@@ -972,7 +981,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="日    期"
+                        android:text="日    期："
                         android:textColor="@color/color_666666"
                         android:textSize="16sp"
                         android:layout_centerVertical="true"
@@ -1025,7 +1034,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginTop="@dimen/dp_5"
-                android:layout_marginBottom="@dimen/dp_5">
+                android:layout_marginBottom="@dimen/dp_5"
+                android:visibility="gone">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -1048,7 +1058,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="审批人"
+                        android:text="审批人："
                         android:textColor="@color/color_666666"
                         android:textSize="16sp"
                         android:layout_centerVertical="true"
@@ -1082,7 +1092,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="日    期"
+                        android:text="日    期："
                         android:textColor="@color/color_666666"
                         android:textSize="16sp"
                         android:layout_centerVertical="true"

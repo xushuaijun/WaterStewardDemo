@@ -33,7 +33,7 @@
                     android:id="@+id/tv_opermanagetask_address"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="地址"
+                    android:text="地址："
                     android:textColor="@color/color_666666"
                     android:textSize="16sp"
                     android:layout_centerVertical="true"
@@ -82,7 +82,7 @@
                     android:id="@+id/tv_opermanagetask_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="维修人"
+                    android:text="维修人："
                     android:textColor="@color/color_666666"
                     android:textSize="16sp"
                     android:layout_centerVertical="true"
@@ -116,7 +116,7 @@
                     android:id="@+id/tv_opermanagetask_code"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="维修人编码"
+                    android:text="维修人编码："
                     android:textColor="@color/color_666666"
                     android:textSize="16sp"
                     android:layout_centerVertical="true"
@@ -149,7 +149,7 @@
                     android:id="@+id/tv_opermanagetask_jtimeview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="接单时间"
+                    android:text="接单时间："
                     android:textColor="@color/color_666666"
                     android:textSize="16sp"
                     android:layout_centerVertical="true"
@@ -187,7 +187,7 @@
                     android:id="@+id/tv_opermanagetask_wtimeview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="维修时间"
+                    android:text="维修时间："
                     android:textColor="@color/color_666666"
                     android:textSize="16sp"
                     android:layout_centerVertical="true"
@@ -220,11 +220,12 @@
                 android:orientation="horizontal"
                 android:background="@android:color/white"
                 android:layout_marginTop="@dimen/dp_1"
-                android:padding="10dp">
+                android:padding="10dp"
+                android:visibility="gone">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="维修内容"
+                    android:text="维修内容："
                     android:textSize="@dimen/sp_15"
                     android:textColor="@color/color_666666"/>
                 <EditText
@@ -247,11 +248,12 @@
                 android:orientation="horizontal"
                 android:background="@android:color/white"
                 android:layout_marginTop="@dimen/dp_1"
-                android:padding="10dp">
+                android:padding="10dp"
+                android:visibility="gone">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="维修类型"
+                    android:text="维修类型："
                     android:textSize="@dimen/sp_15"
                     android:textColor="@color/color_666666"/>
                 <EditText
@@ -278,7 +280,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="维修情况"
+                    android:text="维修情况："
                     android:textSize="@dimen/sp_15"
                     android:textColor="@color/color_666666"/>
                 <EditText
@@ -300,11 +302,12 @@
                 android:orientation="horizontal"
                 android:background="@android:color/white"
                 android:layout_marginTop="@dimen/dp_1"
-                android:padding="10dp">
+                android:padding="10dp"
+                android:visibility="gone">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="维修原因"
+                    android:text="维修原因："
                     android:textSize="@dimen/sp_15"
                     android:textColor="@color/color_666666"/>
                 <EditText
@@ -333,7 +336,7 @@
                     android:id="@+id/tv_opermanagetask_jgSjview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="维修需要时间"
+                    android:text="维修需要时间："
                     android:textColor="@color/color_666666"
                     android:textSize="16sp"
                     android:layout_centerVertical="true"
@@ -362,11 +365,12 @@
                 android:orientation="horizontal"
                 android:background="@android:color/white"
                 android:layout_marginTop="@dimen/dp_1"
-                android:padding="10dp">
+                android:padding="10dp"
+                android:visibility="gone">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="维修建议"
+                    android:text="维修建议："
                     android:textSize="@dimen/sp_15"
                     android:textColor="@color/color_666666"/>
                 <EditText
@@ -388,13 +392,61 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报修设备："
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp"
+                    />
+                <RelativeLayout
+                    android:id="@+id/rl_operamanatask_equipment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="点击添加报修设备"
+                        android:textColor="@color/color_666666"
+                        android:paddingLeft="10dp"
+                        android:textSize="16sp"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ico_sy_todown"
+                        android:paddingLeft="20dp"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.xsyj.watersteward.customview.ListViewForScrollView
+                android:id="@+id/lv_operamanatask_equipment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/bg_color"
+                android:dividerHeight="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
                 android:layout_marginTop="5dp"
                 android:background="@android:color/white"
                 android:gravity="center_vertical">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="清单"
+                    android:text="清单："
                     android:textColor="@color/color_666666"
                     android:textSize="16sp"
                     />
@@ -402,7 +454,8 @@
                     android:id="@+id/rl_opermanagetask_qd"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical">
+                    android:layout_gravity="center_vertical"
+                 >
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -450,7 +503,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="维修费（元）"
+                            android:text="维修费用（元）："
                             android:textSize="@dimen/sp_15"
                             android:textColor="@color/color_666666"/>
                         <EditText
@@ -474,6 +527,7 @@
                         android:orientation="horizontal"
                         android:layout_below="@id/ll_task_price"
                         android:layout_marginTop="@dimen/dp_10"
+                        android:visibility="gone"
                         >
                         <TextView
                             android:layout_width="wrap_content"
@@ -526,7 +580,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/resg_check_selector"
-                        android:text="同意"
+                        android:text="维修成功"
                         android:drawablePadding="@dimen/dp_5"
                         android:textColor="@drawable/rg_orange_selector"
                         android:paddingTop="5dp"
@@ -541,7 +595,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:button="@drawable/resg_check_selector"
-                        android:text="不同意"
+                        android:text="维修失败"
                         android:drawablePadding="@dimen/dp_5"
                         android:textColor="@drawable/rg_orange_selector"
                         android:paddingTop="5dp"
@@ -559,7 +613,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginTop="@dimen/dp_5"
-                android:layout_marginBottom="@dimen/dp_5">
+                android:layout_marginBottom="@dimen/dp_5"
+                android:visibility="gone">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -590,7 +645,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="管护员签名"
+                        android:text="管护员签名："
                         android:textColor="@color/color_666666"
                         android:textSize="16sp"
                         android:layout_centerVertical="true"
@@ -623,7 +678,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="日    期"
+                        android:text="日    期："
                         android:textColor="@color/color_666666"
                         android:textSize="16sp"
                         android:layout_centerVertical="true"

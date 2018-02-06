@@ -111,6 +111,7 @@
                 android:gravity="center_vertical"
                 android:layout_marginTop="@dimen/dp_1"
                 android:background="@android:color/white"
+                android:visibility="gone"
                 >
 
                 <TextView
@@ -146,6 +147,7 @@
                 android:gravity="center_vertical"
                 android:layout_marginTop="@dimen/dp_1"
                 android:background="@android:color/white"
+                android:visibility="gone"
                 >
 
                 <TextView
@@ -173,6 +175,111 @@
                     />
 
             </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="@android:color/white"
+                >
+
+                <TextView
+                    android:id="@+id/tv_opermanageaccept_sgname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="验收人员（水管员）："
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    />
+                <EditText
+                    android:id="@+id/et_opermanagetask_sgname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_opermanageaccept_sgname"
+                    android:text=""
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:minWidth="50dp"
+                    android:background="@android:color/white"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="@android:color/white"
+                >
+cw
+                <TextView
+                    android:id="@+id/tv_opermanageaccept_cwname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="验收人员（村委）："
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    />
+                <EditText
+                    android:id="@+id/et_opermanagetask_cwname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_opermanageaccept_cwname"
+                    android:text=""
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:minWidth="50dp"
+                    android:background="@android:color/white"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="@android:color/white"
+                >
+
+                <TextView
+                    android:id="@+id/tv_opermanageaccept_fixname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="验收人员（运维）："
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    />
+                <EditText
+                    android:id="@+id/et_opermanagetask_fixname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_opermanageaccept_fixname"
+                    android:text=""
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:minWidth="50dp"
+                    android:background="@android:color/white"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            </RelativeLayout>
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -186,7 +293,7 @@
                     android:id="@+id/tv_opermanageaccept_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="验收人员"
+                    android:text="验收人员（水务站）："
                     android:textColor="@color/color_666666"
                     android:textSize="16sp"
                     android:layout_centerVertical="true"
@@ -207,6 +314,7 @@
                     />
 
             </RelativeLayout>
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -257,7 +365,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="@dimen/dp_5">
+                android:layout_marginTop="@dimen/dp_5"
+                android:visibility="gone">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -294,7 +403,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="验收结论"
+                        android:text="验收结论："
                         android:textSize="@dimen/sp_15"
                         android:textColor="@color/color_666666"/>
                     <EditText
@@ -311,6 +420,103 @@
                 </LinearLayout>
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报修设备："
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp"
+                    />
+                <RelativeLayout
+                    android:id="@+id/rl_operamanaccept_equipment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="点击添加报修设备"
+                        android:textColor="@color/color_666666"
+                        android:paddingLeft="10dp"
+                        android:textSize="16sp"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ico_sy_todown"
+                        android:paddingLeft="20dp"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.xsyj.watersteward.customview.ListViewForScrollView
+                android:id="@+id/lv_operamanaccept_equipment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/bg_color"
+                android:dividerHeight="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="清单："
+                    android:textColor="@color/color_666666"
+                    android:textSize="16sp"
+                    />
+                <RelativeLayout
+                    android:id="@+id/rl_operamanaccept_qd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="点击添加清单"
+                        android:gravity="center"
+                        android:textColor="@color/color_666666"
+                        android:textSize="16sp"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ico_sy_todown"
+                        android:paddingLeft="20dp"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <com.xsyj.watersteward.customview.ListViewForScrollView
+                android:id="@+id/lv_operamanaccept_qd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/bg_color"
+                android:dividerHeight="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                />
+
             <RadioGroup
                 android:id="@+id/rg_operamanaccept"
                 android:layout_width="match_parent"
@@ -324,7 +530,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/resg_check_selector"
-                    android:text="同意"
+                    android:text="通过"
                     android:drawablePadding="@dimen/dp_5"
                     android:textColor="@drawable/rg_orange_selector"
                     android:paddingTop="5dp"
@@ -339,7 +545,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/resg_check_selector"
-                    android:text="不同意"
+                    android:text="不通过"
                     android:drawablePadding="@dimen/dp_5"
                     android:textColor="@drawable/rg_orange_selector"
                     android:paddingTop="5dp"
@@ -355,7 +561,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="@dimen/dp_5">
+                android:layout_marginTop="@dimen/dp_5"
+                android:visibility="gone">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -463,7 +670,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="@dimen/dp_5">
+                android:layout_marginTop="@dimen/dp_5"
+                android:visibility="gone">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -574,7 +782,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="@dimen/dp_5">
+                android:layout_marginTop="@dimen/dp_5"
+                android:visibility="gone">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -686,7 +895,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="@dimen/dp_5">
+                android:layout_marginTop="@dimen/dp_5"
+                android:visibility="gone">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
