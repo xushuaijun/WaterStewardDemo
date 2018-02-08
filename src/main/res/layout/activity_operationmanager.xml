@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:drawableLeft="@mipmap/ico_wxsqd"
-            android:text="维修任务单"
+            android:text="维修情况单"
             android:textColor="@color/color_333333"
             android:textSize="18sp"
             android:gravity="center"
