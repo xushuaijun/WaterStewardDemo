@@ -87,4 +87,6 @@
 
     <string name="myorder_list_remark">退款中如2-3日没有到账，请联系管理人员……</string>
 
+    <string name="scan_text">将二维码/条形码放入框内, 即可自动扫描</string>
+
 </resources>

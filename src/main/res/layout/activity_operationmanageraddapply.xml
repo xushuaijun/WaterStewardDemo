@@ -567,11 +567,12 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/ll_opermanageapply_tsh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginTop="@dimen/dp_5"
-                android:visibility="gone">
+                >
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -624,6 +625,7 @@
                     android:layout_marginTop="@dimen/dp_1"
                     android:background="@android:color/white"
                     android:orientation="horizontal"
+                    android:visibility="gone"
                     >
 
                     <TextView
@@ -678,7 +680,6 @@
                         android:background="@android:color/white"
                         android:drawablePadding="@dimen/dp_5"
                         android:layout_marginLeft="10dp"
-                        android:enabled="false"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -735,7 +736,6 @@
                         android:layout_marginLeft="@dimen/dp_5"
                         android:minHeight="@dimen/dp_50"
                         android:padding="@dimen/dp_10"
-                        android:enabled="false"
                         />
                 </LinearLayout>
             </LinearLayout>
@@ -746,7 +746,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginTop="@dimen/dp_5"
-                android:visibility="gone">
+                >
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -787,7 +787,6 @@
                         android:background="@android:color/white"
                         android:drawablePadding="@dimen/dp_5"
                         android:layout_marginLeft="10dp"
-                        android:enabled="false"
                         />
 
                 </LinearLayout>
@@ -822,7 +821,6 @@
                         android:background="@android:color/white"
                         android:drawablePadding="@dimen/dp_5"
                         android:layout_marginLeft="10dp"
-                        android:enabled="false"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -855,7 +853,6 @@
                         android:background="@android:color/white"
                         android:drawablePadding="@dimen/dp_5"
                         android:layout_marginLeft="10dp"
-                        android:enabled="false"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -888,7 +885,6 @@
                         android:background="@android:color/white"
                         android:drawablePadding="@dimen/dp_5"
                         android:layout_marginLeft="10dp"
-                        android:enabled="false"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -914,7 +910,6 @@
                         android:layout_marginLeft="@dimen/dp_5"
                         android:minHeight="@dimen/dp_50"
                         android:padding="@dimen/dp_10"
-                        android:enabled="false"
                         />
                 </LinearLayout>
             </LinearLayout>

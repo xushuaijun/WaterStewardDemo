@@ -53,7 +53,9 @@
                         android:layout_marginTop="10dp"
                         android:orientation="horizontal"
                         android:background="@android:color/white"
-                        android:paddingBottom="@dimen/dp_5">
+                        android:paddingBottom="@dimen/dp_5"
+                        android:gravity="center_vertical"
+                        >
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -62,7 +64,7 @@
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_valve_TapNum"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -86,6 +88,7 @@
                         android:layout_marginTop="1dp"
                         android:orientation="horizontal"
                         android:background="@android:color/white"
+                        android:gravity="center_vertical"
                         >
 
                         <TextView
@@ -95,7 +98,7 @@
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_valve_TapName"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -265,6 +268,7 @@
                         android:layout_marginTop="1dp"
                         android:orientation="horizontal"
                         android:background="@android:color/white"
+                        android:gravity="center_vertical"
                         >
 
                         <TextView
@@ -274,7 +278,7 @@
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_valve_ABranch"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -295,6 +299,7 @@
                         android:layout_marginTop="1dp"
                         android:orientation="horizontal"
                         android:background="@android:color/white"
+                        android:gravity="center_vertical"
                         >
 
                         <TextView
@@ -304,7 +309,7 @@
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_valve_BBranch"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -325,6 +330,7 @@
                         android:layout_marginTop="1dp"
                         android:orientation="horizontal"
                         android:background="@android:color/white"
+                        android:gravity="center_vertical"
                         >
 
                         <TextView
@@ -334,7 +340,7 @@
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_Tap_Model"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -365,7 +371,7 @@
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_Tap_Version"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -395,7 +401,7 @@
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_Tap_Caliber"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -426,7 +432,7 @@
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_Tap_Batch"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -645,7 +651,7 @@ et
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_netGate_Code"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -696,7 +702,7 @@ et
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_Used_Unit"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -726,7 +732,7 @@ et
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_Person_Charge"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -755,7 +761,7 @@ et
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_Person_Phone"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -786,7 +792,7 @@ et
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_Construction_Unit"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -814,7 +820,7 @@ et
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_Debug_Person"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -842,7 +848,7 @@ et
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_Debuger_Phone"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"

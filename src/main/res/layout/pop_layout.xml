@@ -5,44 +5,8 @@
     android:background="@color/bg_color"
     android:layout_margin="10dp"
     android:orientation="vertical"
+    android:paddingTop="@dimen/dp_5"
     >
-
-    <LinearLayout
-        android:id="@+id/ll_pop_ordernum"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp_10"
-        android:background="@android:color/white"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="10dp">
-
-        <TextView
-            android:id="@+id/tv_pop_condition"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text="订单编号："
-            android:textColor="@color/color_666666"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/et_pop_ordercode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:background="@android:color/white"
-            android:drawablePadding="@dimen/dp_5"
-            android:drawableRight="@mipmap/ico_edit"
-            android:hint="请输入查询条件"
-            android:minWidth="100dp"
-            android:text=""
-            android:textColor="@color/title_bg"
-            android:textColorHint="@color/bottom_line"
-            android:textSize="18sp" />
-
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/ll_pop_checkbox"
@@ -50,10 +14,11 @@
         android:layout_height="wrap_content"
         android:paddingLeft="@dimen/dp_10"
         android:paddingRight="@dimen/dp_10"
-        android:paddingTop="@dimen/dp_10"
-        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5"
         android:orientation="horizontal"
-        android:layout_marginTop="@dimen/dp_1">
+        android:layout_marginBottom="@dimen/dp_1"
+        android:background="@color/white">
         <CheckBox
             android:id="@+id/cb_pop_buy"
             android:layout_width="0dp"
@@ -113,7 +78,41 @@
             android:textColor="@drawable/text_green_selector"
             />
     </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_pop_ordernum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
 
+        <TextView
+            android:id="@+id/tv_pop_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="订单编号："
+            android:textColor="@color/color_666666"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_pop_ordercode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/white"
+            android:drawablePadding="@dimen/dp_5"
+            android:drawableRight="@mipmap/ico_edit"
+            android:hint="请输入查询条件"
+            android:minWidth="100dp"
+            android:text=""
+            android:textColor="@color/title_bg"
+            android:textColorHint="@color/bottom_line"
+            android:textSize="18sp" />
+
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

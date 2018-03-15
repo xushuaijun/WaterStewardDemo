@@ -273,7 +273,7 @@
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_well_sbxh"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -526,7 +526,7 @@
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_well_jlsbbh"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -556,7 +556,7 @@
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/d_well_jlsbxh"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -593,7 +593,7 @@
                             android:paddingBottom="@dimen/dp_10"
                             />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_well_jlsbbbh"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -678,7 +678,7 @@
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_well_gprsnum"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -709,7 +709,7 @@
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_well_sjkh"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -718,7 +718,8 @@
                             android:background="@android:color/white"
                             android:padding="10dp"
                             android:textColor="@color/color_666666"
-                            android:textSize="@dimen/sp_16" />
+                            android:textSize="@dimen/sp_16"
+                            android:inputType="phone"/>
                     </LinearLayout>
                     <View
                         android:layout_width="match_parent"
@@ -739,7 +740,7 @@
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_well_lltc"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -818,7 +819,7 @@
                             android:textSize="@dimen/sp_16"
                             android:gravity="center_vertical"/>
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_well_kzsbxh"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -850,7 +851,7 @@
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16"
                             android:gravity="center_vertical"/>
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_well_kzsbbh"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -882,7 +883,7 @@
                             android:text="控制设备地址："
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_well_kzsbdz"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -914,7 +915,7 @@
                             android:text="控制设备版本号："
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_well_kzsbbbh"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -947,7 +948,7 @@
                             android:text="计量设备厂家："
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_well_jlsbcj"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -980,7 +981,7 @@
                             android:text="控制设备厂家："
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_well_kzsbcj"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -1334,7 +1335,7 @@ et
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="信号质量："
+                            android:text="信号质量（几格）："
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
@@ -1845,7 +1846,7 @@ et
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_well_sydw"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -1874,7 +1875,7 @@ et
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_well_fzr"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -1904,7 +1905,7 @@ et
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_well_fzrdh"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -1935,7 +1936,7 @@ et
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_well_sgdw"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -1963,7 +1964,7 @@ et
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/tv_well_tsr"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -1991,7 +1992,7 @@ et
                             android:textColor="@color/color_333333"
                             android:textSize="@dimen/sp_16" />
 
-                        <EditText
+                        <com.xsyj.watersteward.customview.SpinnerEditText
                             android:id="@+id/et_well_tsrdh"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
